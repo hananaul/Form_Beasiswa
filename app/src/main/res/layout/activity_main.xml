@@ -22,7 +22,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
-            android:src="@drawable/logoUB" />
+            android:src="@drawable/logoub" />
 
         <TextView
             android:id="@+id/textView"
@@ -56,12 +56,24 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:id="@+id/textViewJK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jenis Kelamin :" />
 
         <RadioGroup
+            android:id="@+id/RadioGrup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -125,6 +137,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OK" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="New Text" />
+
+        <TextView
+            android:id="@+id/textViewHasil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="New Text" />
+
+        <TextView
+            android:id="@+id/textViewHasil5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="New Text" />
+
+        <TextView
+            android:id="@+id/textViewHasil3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="New Text" />
+
+        <TextView
+            android:id="@+id/textViewHasil4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="New Text" />
+
+        <TextView
+            android:id="@+id/textViewHasil6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="New Text" />
 
     </LinearLayout>
 </ScrollView>
