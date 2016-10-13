@@ -89,6 +89,27 @@ public class MainActivity extends AppCompatActivity {
         } else
             TVHasil5.setText("Email\t\t\t: " + alamat);
 
+        String hasil = null;
+        if (RBLk.isChecked()) {
+            hasil = RBLk.getText().toString();
+            TVHasil3.setText("Jenis Kelamin\t\t: Laki-Laki");
+            valid = true;
+        } else if (RBWn.isChecked()) {
+            hasil = RBWn.getText().toString();
+            TVHasil3.setText("Jenis Kelamin\t\t: Wanita");
+            valid = true;
+        }
+
+        String hobi = "Hobi anda\t\t: ";
+        int startlen = hobi.length();
+        if (CBBa.isChecked()) hobi += CBBa.getText() + ", ";
+        if (CBNyan.isChecked()) hobi += CBNyan.getText() + ", ";
+        if (CBOl.isChecked()) hobi += CBOl.getText() + ", ";
+        if (CBGam.isChecked()) hobi += CBGam.getText() + ", ";
+        if (hobi.length() == startlen) hobi += "Tidak ada";
+        TVHasil4.setText(hobi);
+
+        TVHasil6.setText("Pilihan Jurusan : " + spJurus.getSelectedItem().toString());
 
         return true;
     }
